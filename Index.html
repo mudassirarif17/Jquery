@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All about Jquery</title>
+</head>
+
+<body>
+    <p class="odd">Welcome to Jquery1</p>
+    <p id="second">Welcome to Jquery2</p>
+    <p class="odd">Welcome to Jquery3</p>
+    <p>Welcome to Jquery4</p>
+    <p>Welcome to Jquery5</p>
+
+</body>
+<script src="./js/code.jquery.com_jquery-3.7.0.min.js"></script>
+<script>
+    $(document).ready(function () {
+        // Your jQuery Code here 
+        // console.log($);
+        // Syntax for Jquery
+        // $('selector').action()
+
+        // $('p').click();
+
+        // This is an example of element selector
+        $('p').click(function () {
+            console.log("You clicked on P" , this);
+        //     // $('p').hide();
+        //     $(this).hide();
+        });
+
+        // There are three main types of Selector in Jquery
+        // 1. element selector
+        // 2. Id selector
+        // 3. Class Selector 
+
+        // this is an example of id selector
+        // $("#second").hide();
+        // $("#second").click();
+
+        // This is an example of class selector 
+        // $('.odd').hide();
+        // $('.odd').click();
+
+        // Other selectors 
+        // $('*').click();     //Click on all the elements 
+        // $('p.odd').click();  //click only on those paragraph which have a class odd
+        // $('p:first').click();
+        
+    })
+
+</script>
+
+</html>
